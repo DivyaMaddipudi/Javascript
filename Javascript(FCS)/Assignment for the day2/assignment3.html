@@ -1,0 +1,46 @@
+<!-- 
+    Printing different date formats
+
+    output:
+    Date Formats:
+    6-13-2020
+
+    6/13/2020
+
+    13-6-2020
+
+    13/6/2020
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2</title>
+    <h1>Assignment_3 on  Day_2</h1>
+</head>
+<body>
+    <strong>Date Formats: </strong>
+    <p id="format1"></p>
+    <p id="format2"></p>
+    <p id="format3"></p>
+    <p id="format4"></p>
+    <script>
+        var d =new Date();
+        var month = d.getMonth();
+        var date = d.getDate();
+        var year = d.getFullYear();
+
+        var format1 = month + "-" + date + "-" + year;
+        var format2 = month + "/" + date + "/" + year;
+        var format3 = date + "-" + month + "-" + year;
+        var format4 = date + "/" + month + "/" + year;
+
+        document.getElementById('format1').innerHTML=format1;
+        document.getElementById('format2').innerHTML=format2;
+        document.getElementById('format3').innerHTML=format3;
+        document.getElementById('format4').innerHTML=format4;
+        
+    </script>
+</body>
+</html>
