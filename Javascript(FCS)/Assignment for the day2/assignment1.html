@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignments</title>
+    <h1>Assignment_1 on  Day_2</h1>
+</head>
+<body>
+    
+    <p id="sample"></p>
+    <p id="sample1"></p>
+    <script>
+        var d = new Date();
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+        document.getElementById("sample").innerHTML = "Today is : " + days[d.getDay()];
+        var hour = d.getHours();
+
+        var currentHour;
+        if(hour > 12) {
+            currentHour = hour - 11;
+            currentHour = currentHour + " " + "PM";
+        } else {
+            hour = hour + " " + "AM";
+        }
+        document.getElementById("sample1").innerHTML = "Current time is : " + currentHour +" : "+ d.getMinutes() +" : "+ d.getSeconds();
+    </script>
+    
+</body>
+</html>
