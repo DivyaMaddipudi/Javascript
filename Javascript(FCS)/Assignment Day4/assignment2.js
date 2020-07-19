@@ -6,7 +6,6 @@ const student = {
     }
 }
 
-for(let key in student) {
-    console.log(key, student[key]);
-}
-console.log(student.projects, student.projects.diceGame);
+const{name, age, projects:{diceGame}} = student;
+console.log(name, age, diceGame);
+

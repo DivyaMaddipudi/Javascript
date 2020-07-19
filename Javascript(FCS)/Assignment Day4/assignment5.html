@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var salesMade = prompt("Enter the value");
+        var reward;
+        if(salesMade>0 && salesMade<=5000) {
+            reward = salesMade + (salesMade * 2)/100;
+        } else if(salesMade>5000 && salesMade <=10000) {
+            reward = salesMade + (salesMade * 5)/100;
+        } else if(salesMade>100001 && salesMade <=20000) {
+            reward = salesMade + (salesMade * 7)/100;
+        } else if(salesMade > 20000) {
+            reward = salesMade + (salesMade * 20)/100;
+        }
+        document.write(Math.log(reward));
+
+    </script>
+</body>
+</html>
