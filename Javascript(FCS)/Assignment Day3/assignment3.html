@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Using Conditional
+        var marks = window.prompt("Enter Marks");
+        if(marks > 89 && marks<=100) {
+            console.log(`Marks are ${marks} and Grade is A.`);
+        } else if(marks > 69 && marks <= 89) {
+            console.log(`Marks are ${marks} and Grade is B.`);
+        } else {
+            console.log(`Marks are ${marks} and Grade is C.`);
+        }
+
+        //Using terenary
+        var value = (marks > 89 && marks <= 100) ? console.log(`Marks are ${marks} and Grade is A.`) : (marks > 69 && marks <= 89) ? console.log(`Marks are ${marks} and Grade is B.`) : console.log(`Marks are ${marks} and Grade is C.`);
+
+    </script>
+    
+</body>
+</html>
