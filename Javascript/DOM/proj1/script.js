@@ -1,6 +1,6 @@
-var counter = document.querySelector(".counter");
+var counter = document.getElementsByClassName("counter") [0];
 
-var followers = document.querySelector(".followers");
+var followers = document.getElementsByClassName("followers") [0];
 
 let count = 1;
 
@@ -13,5 +13,5 @@ setInterval(() => {
 
 
 setTimeout(() => {
-    followers.innerText = "Followers on IG!"
+    followers.innerHTML = "Followers on IG!"
 }, 4000)
