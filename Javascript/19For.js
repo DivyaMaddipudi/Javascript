@@ -17,10 +17,15 @@ const myStates = [
 //     console.log(myStates[i]);   
 // }
 
+// let i = 0;
+// while(i<myStates.length) {
+//     console.log(myStates[i]);
+//     i++;
+// }
+
 let i = 0;
 
-while(i<myStates.length) {
+do {
     console.log(myStates[i]);
     i++;
-}
-
+} while(i<myStates.length) 
